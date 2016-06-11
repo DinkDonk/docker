@@ -15,7 +15,7 @@ Simple: `npm install -g docker`
 ## Usage
 
 ```sh
-$ docker [options] [files ...]
+$ docker.js [options] [files ...]
 ```
 
 Available options are:
@@ -47,21 +47,21 @@ If you haven't installed with `-g` specified, replace `docker` with something li
 ### Process every file in the current directory into "doc"
 
 ```sh
-$ docker
+$ docker.js
 ```
 
 ### Process files in "src" to "documents"
 
 ```sh
-$ docker -i src -o documents
+$ docker.js -i src -o documents
 ```
 or:
 ```sh
-$ docker -o documents src
+$ docker.js -o documents src
 ```
 or:
 ```sh
-$ docker -o documents src/*
+$ docker.js -o documents src/*
 ```
 
 Note that in the first example, the contents of `src` will be mapped directly into `documents` whereas in the second and third
@@ -81,7 +81,7 @@ This is the command I use to generate [this project's documentation](http://jbt.
  * Include the File Search extra
 
 ```sh
-$ docker -o ../docker_gh-pages -c manni -s yes -I -u -x node_modules -w --extras fileSearch
+$ docker.js -o ../docker_gh-pages -c manni -s yes -I -u -x node_modules -w --extras fileSearch
 ```
 
 ## Extras
