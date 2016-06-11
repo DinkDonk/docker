@@ -1,5 +1,9 @@
 # Docker Version History
 
+## 0.3.0
+
+ * Changed binary name to ´docker.js´ to mitigate naming conflict with docker CLI.
+
 ## 0.2.14
 
  * Improvements to handling of literals that shouldn't be matched for comments
